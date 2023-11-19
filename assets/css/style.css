@@ -1,18 +1,30 @@
-/* Tags */
+/* TAGS */
+/* For all elements, change the box-sizing to include any padding and borders
+    and default the margins and padding to zero. */
 * {
     box-sizing: border-box;
     margin:     0;
     padding:    0;
 }
+
+/* Set a background color of a slightly yellowish offwhite. */
 body {background-color: #d9dcd6;}
+
+/* Set link colors to white and remove the default underline. */
 a {
     color:           #ffffff;
     text-decoration: none;
 }
+
+/* Set the font-size for all paragraph tags to 16 pixels. */
 p {font-size: 16px;}
 
-/* Classes */
+/* CLASSES */
 /** Page Header **/
+
+/* Add 20 pixels of padding to the header element; create a blue (with slight green)
+    background color, and white text color. Set font to a sans-serif type 
+    (preferrably Trebuchet MS). */
 .header {
     padding: 20px;
 
@@ -20,12 +32,21 @@ p {font-size: 16px;}
     color:            #ffffff;
     font-family:      'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+/* Make the main header text (h1) flow with inline text as a block, with a font
+    size of 48 pixels. */
 .header h1 {
     display:   inline-block;
     font-size: 48px;
 }
+
+/* Change the "seo" part of the h1 text to match the background color of the body,
+   as a slightly yellowish offwhite. */
 .header h1 .seo {color: #d9dcd6;}
 
+/* Make the navigation group appear on the right side of the header (instead of
+    the default left), and add a padding of 15 pixels with a margin of 20 pixels.
+    Set the font to a sans-serif type (preferrably Gill Sans). */
 .header nav {
     float:        right;
     margin-right: 20px;
@@ -34,13 +55,19 @@ p {font-size: 16px;}
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:   20px;
 }
+/* Remove the bullets from the unordered list items. */
 .header nav ul    {list-style-type: none;}
+/* Display the list items as blocks of text to sit on the same line with each other.
+    Make sure each list item has a left margin of 25 pixels. */
 .header nav ul li {
     display:     inline-block;
     margin-left: 25px;
 }
 
 /** Hero **/
+/* Set the hero image to take up 100% of the width of the window, with a height of
+    800 pixels, and a margin of 25 pixels below. Set the background image with a URL,
+    center it, and have it cover the full area, cropping where necessary.*/
 .hero {
     width:         100%;
     height:        800px;
@@ -52,12 +79,18 @@ p {font-size: 16px;}
 }
 
 /** Content **/
+/* Make the main content container sit inline as a block, with a width of 75% of its
+    parent's area, and put a 20 pixel margin on the left. */
 .content {
     display:     inline-block;
     width:       75%;
     margin-left: 20px;
 }
 /*** Content Sections ***/
+/* For each of the classified content sections: give them a height of 300 pixels,
+    a padding of 50 pixels, and a bottom margin of 20 pixels. Set the background
+    color to a blue with some green, For the text, use a sans-serif type (preferrably
+    Gills Sans) in white. */
 .online-reputation-management,
 .search-engine-optimization,
 .social-media-marketing {
@@ -69,11 +102,15 @@ p {font-size: 16px;}
     color:            #ffffff;
     font-family:      'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/* For each image in the classified content sections: give them a maximum height
+    of 200 pixels. */
 .online-reputation-management img,
 .search-engine-optimization img,
 .social-media-marketing img {
     max-height: 200px;
 }
+/* For each of the h2 text blocks in the classified content sections: give them a
+    bottom margin of 20 pixels and a font-size of 36 pixels. */
 .online-reputation-management h2,
 .search-engine-optimization h2,
 .social-media-marketing h2 {
@@ -82,6 +119,11 @@ p {font-size: 16px;}
 }
 
 /** Benefits **/
+/* Clear the way for the benefits container, and have it set to the right side.
+    Give it a width of 20% of it's parent, and 100% of the available height. Create
+    a margin of 20 pixels on the right and an overall padding of 20 pixels. Set the
+    background color to a blue with some green (and a little red), For the text, use
+    a sans-serif type (preferrably Gills Sans) in white. */
 .benefits {
     clear:        both;
     float:        right;
@@ -93,18 +135,25 @@ p {font-size: 16px;}
     background-color: #2589bd;
     font-family:      'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/* For each of the classified benefit elements: give them white text and create
+    a margin on the bottom of 32 pixels. */
 .benefit-cost,
 .benefit-brand,
 .benefit-lead {
     margin-bottom: 32px;
     color:         #ffffff;
 }
+/* For each benefit h3 text blocks: put a 10 pixel margin on the bottom and center
+    the text. */
 .benefit-brand h3,
 .benefit-cost h3,
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align:    center;
 }
+/* Display the benefits images as blocks with a maximum width of 150 pixels, and
+    give them a top and bottom margin of 10 pixels, and adjust left and right the 
+    margins automatically. */
 .benefit-brand img,
 .benefit-cost img,
 .benefit-lead img {
@@ -114,6 +163,8 @@ p {font-size: 16px;}
 }
 
 /** Page Footer **/
+/* Put the footer on a line of its own, with a padding of 30 pixels. Set the font
+ family to a sans-serif type (preferrably Trebuchet MS), and center it. */
 .footer {
     clear:       both;
     padding:     30px;
@@ -121,13 +172,16 @@ p {font-size: 16px;}
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align:  center;
 }
+/* Set the h4 text to a font size of 20 pixels. */
 .footer h4 {font-size: 20px;}
 
 /** Floats **/
+/* Put the classified element on the left, and a 25 pixel margin on the right. */
 .float-left {
     float:        left;
     margin-right: 25px;
 }
+/* Put the classified element on the right, and a 25 pixel margin on the left. */
 .float-right {
     float:       right;
     margin-left: 25px;
