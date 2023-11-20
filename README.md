@@ -7,8 +7,14 @@ The most notable changes were:
 * Converting `div` tags to `header`, `main`, `section`, `article`, `aside`, and `footer`.
 * Consolidating the tags that were similar, organizing the tags by grouping, and spacing the parameters in an easy to read format.
 * Additional commenting was added to both for the purposes of separation, but most things in there are self-explanatory.
+* Fixed a couple of errors in the HTML code that were broken.
 
 Original code for the website (preoptimization) can be found here: https://github.com/coding-boot-camp/urban-octo-telegram.
+
+## Installation
+You can extract the files in web site's root directory (for example, /var/www/html).
+
+Note: Unless both your web host and user have a fast enough connection, they may notice a performance issue with the size of the images being served. If you notice this is the case, you can reduce the quality of the images to reduce the amount if time that it takes to load. As of right now it's ~50MB. This shouldn't be an issue on faster machines.
 
 ## Usage
 
